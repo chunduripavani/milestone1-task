@@ -1,0 +1,30 @@
+<html>
+<body>
+<h2>Get the website URL</h2>
+<p id="demo">generate a random number</p>
+<p id="demo1"></p>
+<script type="text/javascript">
+//random number
+const num=Math.ceil(Math.random()*10);
+console.log(num);
+const gnum=prompt('guess the number between 1 to 10');
+if(gnum==num)
+document.write("Matched");
+else
+document.write('Notmatched');
+//displaying website url
+document.getElementById("demo").innerHTML = 
+"The full URL of this page is:<br>" + window.location.href;
+//declaring datatype of a variable
+document.getElementById("demo1").innerHTML = 
+typeof 0 + "<br>" + 
+typeof 314 + "<br>" +
+typeof 3.14 + "<br>" +
+typeof (3) + "<br>" +
+typeof (3 + 4);
+//calculate area of circle
+a = Math.PI * (10 * 10);
+document.write(" Area = " + a + " sq. units");
+</script>
+</body>
+</html>
